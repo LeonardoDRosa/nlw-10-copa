@@ -121,6 +121,10 @@ header {
 .card ul li img {
   transition: transform 0.3s;
 }
+.highlight {
+  border: 3px solid rgb(123, 226, 19);
+  border-radius: 50%;
+}
 
 .card {
   opacity: 0;

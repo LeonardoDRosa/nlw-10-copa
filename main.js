@@ -1,11 +1,30 @@
 function createGame(player1, hour, player2) {
+  if (player1 ==="brazil"){
+  return `
+    <li>
+     <img src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}" class="highlight" />
+     <strong>${hour}</strong>
+     <img src="./assets/icon-${player2}.svg" alt=" Bandeira da ${player2}" />
+    </li>  
+    `;
+  }
+  if (player2==="brazil"){
+    return `
+    <li>
+     <img src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}" />
+     <strong>${hour}</strong>
+     <img src="./assets/icon-${player2}.svg" alt=" Bandeira da ${player2}" class="highlight"/>
+    </li>
+    `;
+  }
+  
   return `
     <li>
      <img src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}" />
      <strong>${hour}</strong>
      <img src="./assets/icon-${player2}.svg" alt=" Bandeira da ${player2}" />
     </li>
-    `
+    `;
 }
 let delay = -0.4
 function createCard(date, day, games) {
